@@ -14,7 +14,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Travaux_Pratiques"
 include ':app'
-include ':app:module4demo'
 include ':module4demo'
 include ':module4tp'
 include ':module4databinding'
+include ':module4datatp'
