@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val textView = findViewById<TextView>(R.id.textView)
+        val textView = findViewById<TextView>(R.id.textViewInfo)
         val button = findViewById<Button>(R.id.button)
         button.setOnClickListener {
             textView.text = "J'ai appuyé sur le bouton :D"

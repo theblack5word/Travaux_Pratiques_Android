@@ -1,4 +1,4 @@
-package com.eni.mod5navdemo
+package com.eni.mod5nav
 
 import org.junit.Test
 
