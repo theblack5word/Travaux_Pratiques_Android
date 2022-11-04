@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.eni.mod5nav'
+    namespace 'com.eni.mod5navtp2'
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.eni.mod5nav"
+        applicationId "com.eni.mod5navtp2"
         minSdk 21
         targetSdk 32
         versionCode 1
@@ -39,8 +39,6 @@ dependencies {
     //Dependencies for Navigation Component
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
-
-
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
