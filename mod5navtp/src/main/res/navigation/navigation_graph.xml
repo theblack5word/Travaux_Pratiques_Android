@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/whiteFragment">
+
+    <fragment
+        android:id="@+id/blueFragment"
+        android:name="com.eni.myapplication.BlueFragment"
+        android:label="fragment_blue"
+        tools:layout="@layout/fragment_blue" />
+    <fragment
+        android:id="@+id/orangeFragment"
+        android:name="com.eni.myapplication.OrangeFragment"
+        android:label="fragment_orange"
+        tools:layout="@layout/fragment_orange" />
+    <fragment
+        android:id="@+id/greenFragment"
+        android:name="com.eni.myapplication.GreenFragment"
+        android:label="fragment_green"
+        tools:layout="@layout/fragment_green" />
+    <fragment
+        android:id="@+id/pinkFragment"
+        android:name="com.eni.myapplication.PinkFragment"
+        android:label="fragment_pink"
+        tools:layout="@layout/fragment_pink" >
+        <action
+            android:id="@+id/actionPinkToGreen"
+            app:destination="@id/greenFragment" />
+        <action
+            android:id="@+id/actionPinkToYellow"
+            app:destination="@id/yellowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/redFragment"
+        android:name="com.eni.myapplication.RedFragment"
+        android:label="fragment_red"
+        tools:layout="@layout/fragment_red" >
+        <action
+            android:id="@+id/actionRedToOrange"
+            app:destination="@id/orangeFragment" />
+        <action
+            android:id="@+id/actionRedToBlue"
+            app:destination="@id/blueFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/whiteFragment"
+        android:name="com.eni.myapplication.WhiteFragment"
+        android:label="fragment_white"
+        tools:layout="@layout/fragment_white" >
+        <action
+            android:id="@+id/actionWhiteToRed"
+            app:destination="@id/redFragment" />
+        <action
+            android:id="@+id/actionWhiteToPink"
+            app:destination="@id/pinkFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yellowFragment"
+        android:name="com.eni.myapplication.YellowFragment"
+        android:label="fragment_yellow"
+        tools:layout="@layout/fragment_yellow" />
+</navigation>
